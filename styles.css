@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+  padding: 1.25rem 1rem 0.06rem 1rem;
+  height: 5rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-icon {
+  height: 2rem;
+  width: 2.1rem;
+}
+
+.logo {
+  height: 2.6rem;
+  width: 5.25rem;
+}
+
+.main-container {
+  position: fixed;
+  top: 81px; /* Height of the navigation bar */
+  width: 100%;
+  height: calc(100% - 5rem);
+  padding: 0px 10px; /* Adjust for the height of the navigation bar */
+}
+
+.dog-container {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+.dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.buttons-container {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.decline-button,
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: background-color 0.3s ease;
+}
+
+.like-button:hover {
+  background-color: #dbfff4;
+}
+
+.decline-button:hover {
+  background-color: #ffe7ef;
+}
+.dog-caption {
+  position: absolute;
+  bottom: 10px; /* Adjust the positioning as per your preference */
+  left: 10px; /* Adjust the positioning as per your preference */
+  z-index: 1; /* Ensure the dog caption is placed above the buttons container */
+}
+.dog-name {
+  color: #fff; /* White color for the dog name */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dog-greeting {
+  color: #b7b7b7; /* Grey color for the greeting */
+  font-size: 16px;
+}
+
+.no-badge-icon,
+.like-badge-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20%; /* Adjusted width to 550px */
+  height: 10%; /* Adjusted height to 892px */
+  z-index: 2; /* Ensure the icon is positioned above the image */
+  display: none;
+}
