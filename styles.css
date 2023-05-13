@@ -37,6 +37,8 @@ body {
   width: 100%;
   height: calc(100% - 5rem);
   padding: 0px 10px; /* Adjust for the height of the navigation bar */
+  display: flex;
+  flex-direction: column;
 }
 
 .dog-container {
@@ -58,8 +60,8 @@ body {
   align-items: center;
 }
 
-.decline-button,
-.like-button {
+button {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
